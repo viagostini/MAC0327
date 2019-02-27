@@ -2,14 +2,15 @@
 
 using namespace std;
 
-typedef long long ll;
+long long ans = 0;
 
 int main () {
-    ll n;
+    long long n;
 
     cin >> n;
-    
-    ll ans = (2LL << n) - 2;
-    
-    printf("%lld\n", ans);
+
+    for (int i = 1; i <= n; i++)
+        ans += pow(2, i);
+
+    cout << ans << endl;
 }
