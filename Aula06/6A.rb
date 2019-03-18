@@ -1,6 +1,5 @@
 # escrevendo pra completar cinquenta caracteres
 # e poder submeter o codigo rsrs
 
-n = gets.chomp.to_i
-puts n
-puts '1 ' * n
+n, k = gets.chomp.split(' ').map(&:to_i)
+puts (k + n - 1) / n 
