@@ -24,7 +24,6 @@ int main () {
     ios_base::sync_with_stdio(false);
     ll n, s;
     cin >> n >> s;
-    // cout << solve(n, s) << endl;
     ll lo = 1, hi = n, ans = -1;
     while (lo <= hi) {
         ll mid = lo + ((hi-lo) / 2);
@@ -38,10 +37,4 @@ int main () {
     if (ans == -1) cout << 0 << endl;
     else cout << n-ans+1 << endl;
 }
-
-
-
-
-
-
 
